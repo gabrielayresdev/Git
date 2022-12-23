@@ -11,6 +11,9 @@ Os commits são as unidades estruturais de um cronograma de projeto Git. Podem s
 ### .gitignore
 Arquivo onde são informados os arquivos/pastas que não serão monitoradas pelo git. Nele devem ser escritos os nomes de cada arquivo ou pasta que serão ignoradas.
  
+### Branch
+Uma ramificação no git é um ponteiro para as alterações feitas nos arquivos do projeto. É útil em situações nas quais você deseja adicionar um novo recurso ou corrigir um erro, gerando uma nova ramificação garantindo que o código instável não seja mesclado nos arquivos do projeto principal.
+
 ## Comandos
 
 ### git init
@@ -53,8 +56,25 @@ Faz a cópia dos arquivos armazenados no servidor.
 Envia os arquivos do repositório para o servidor.
 
 ### git pull [repositório remoto] [branch]
-Baixa os arquivos do servidor para o repositório
+Baixa os arquivos do servidor para o repositório.
 
+### git branch 
+Exibe todos os branches existentes.
+
+### git branch [nome]
+Cria um novo branch.
+
+### git checkout [branch]
+Seleciona o branch que irá realizar os commits.
+
+### git checkout -b [nome]
+Cria e seleciona o branch que irá realizar os commits.
+
+### git merge [branch]
+Une as alterações da branch chamada a branch atual.
+
+### git rebase [branch]
+Funciona de modo semelhante ao git merge, porém não realiza um commit de merge. 
 
 ## Boas práticas
 
